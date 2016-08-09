@@ -1,0 +1,15 @@
+doorman:
+    build: ../../
+    dockerfile: ./tests/integration/Dockerfile
+
+    ports:
+      - 5000:5000
+
+    volumes:
+      - ../../../doorman:/usr/src/app:rw
+      - ../../supervisord.conf:/etc/supervisord.conf:rw
+
+    links:
+      - mongodb
+mongodb:
+   image: mvertes/alpine-mongo

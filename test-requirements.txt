@@ -5,3 +5,6 @@ pytest-cov
 pytest
 mongomock
 pytest-flask
+requests
+wait
+docker-compose

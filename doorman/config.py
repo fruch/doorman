@@ -1,1 +1,1 @@
-MONGO_URL="mongodb://localhost"
+MONGO_URL="mongodb://mongodb"
